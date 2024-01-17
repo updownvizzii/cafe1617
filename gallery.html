@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery of 1617</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@400;800&display=swap" rel="stylesheet">
+
+    <style>
+      body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 200%; /* Adjust this value based on the number of images */
+  animation: scroll 20s linear infinite;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/* Responsive design for screens smaller than 600px */
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    height: 1000%; /* Adjust this value based on the number of images */
+  }
+}
+.fixed-button {
+  font-family: 'Courier New', Courier, monospace;
+  position: fixed; /* Change this from absolute to fixed */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  border: 2px;
+  color: white;
+  padding: 20px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 3px;
+  cursor: pointer;
+  border-radius: 12px;
+  z-index: 1;
+
+}
+
+.fixed-button:hover {
+  background-color: #444;
+}
+
+/* Responsive design for screens smaller than 600px */
+/* Responsive design for screens smaller than 600px */
+@media (max-width: 600px) {
+  .fixed-button {
+    top: auto;
+    bottom: 20px;
+    left: 20px;
+    transform: none;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+  <header class="header" style="  position: fixed;
+  z-index: 1;  background-color: #000; 
+  width: 100%;">
+      <nav>
+        <ul>
+          <li class="boxed"><a href="https://www.eazydiner.com/bengaluru/cafe-1617-kalyan-nagar-north-bengaluru-691964"> Reserve</a></li>
+          <li class="boxed"><a href="/gallery.html">Gallery</a></li>
+          <li class="boxed"><a href="/Menu.html">Menu</a></li>
+          <li class="boxed"><a href="#">Makeup Studio</a></li>
+        </ul>
+      </nav>
+      <a href="/index.html" style="text-decoration: none;">
+        <h1 style="text-align: center; font-family: 'Courier New', Courier, monospace;">Cafe 1617</h1>
+      </a>
+    </header>
+    <button class="fixed-button"><a href="Menu.html">View Menu </a></button>
+    
+        <div class="gallery">
+            <img src="/imgs/1.png" alt="Cafe Image 1">
+            <img src="/imgs/2.png" alt="Cafe Image 2">
+            <img src="/imgs/3.png" alt="Cafe Image 3">
+            <img src="/imgs/4.png" alt="Cafe Image 4">
+            <img src="/imgs/5.png" alt="Cafe Image 5">
+            <img src="/imgs/6.png" alt="Cafe Image 6">
+            <img src="/imgs/7.png" alt="Cafe Image 7">
+            <img src="/imgs/8.png" alt="Cafe Image 8">
+            <img src="/imgs/9.png" alt="Cafe Image 9">
+            <img src="/imgs/10.png" alt="Cafe Image 10">
+            <img src="/imgs/11.png" alt="Cafe Image 11">
+            <img src="/imgs/12.png" alt="Cafe Image 12">
+            <img src="/imgs/13.png" alt="Cafe Image 13">
+            <img src="/imgs/14.png" alt="Cafe Image 14">
+            <img src="/imgs/15.png" alt="Cafe Image 15">
+            <img src="/imgs/16.png" alt="Cafe Image 16">
+            <img src="/imgs/17.png" alt="Cafe Image 17">
+            <img src="/imgs/18.png" alt="Cafe Image 18">
+            <img src="/imgs/19.png" alt="Cafe Image 19">
+            <img src="/imgs/20.png" alt="Cafe Image 20">
+            <img src="/imgs/21.png" alt="Cafe Image 21">
+            <img src="/imgs/22.png" alt="Cafe Image 22">
+            <img src="/imgs/23.png" alt="Cafe Image 23">
+            <img src="/imgs/24.png" alt="Cafe Image 24">
+            <img src="/imgs/25.png" alt="Cafe Image 25">
+            <img src="/imgs/26.png" alt="Cafe Image 26">
+            <img src="/imgs/27.png" alt="Cafe Image 27">
+            <img src="/imgs/28.png" alt="Cafe Image 28">
+            <img src="/imgs/29.png" alt="Cafe Image 29">
+            <img src="/imgs/30.png" alt="Cafe Image 30">
+          <!-- Add more images as needed -->
+        </div>
+      </div>
+
+    <!-- Add your additional content here -->
+
+</body>
+</html>
