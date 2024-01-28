@@ -1,235 +1,151 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@400;800&display=swap" rel="stylesheet">
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    />
-    <link rel="stylesheet" href="src/styles.css" />
-    <title>Restaurant Menu</title>
-    <style>
-       
-* {
-  /* margin: 0;
-  padding: 0; */
-  box-sizing: border-box;
-  font-family: 'Turret Road', sans-serif;
+<head>
+
+  <style>
+
+body, html {
+  
+  margin: 0;
+  font: 400 15px/1.8;
+  letter-spacing: 3px;
+  background: #000;
+  color: aliceblue;
+  font-family:'Turret Road', sans-serif;
+  
+
 }
+
+a {
+  color: white; /* Change this to the color you want */
+}
+
+a:hover {
+  color: wheat; /* Change this to the color you want */
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+
+.header, .footer {
+  background: rgba(0, 0, 0);
+  color: #f2f2f2;
+  padding: 15px;
+  z-index: 1; 
+}
+
+.header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+  .header nav ul {
+    flex-wrap: wrap; /* Add this line */
+  }
+}
+
+.header nav ul li {
+  flex: 1;
+}
+
+.header nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.header nav ul li a:hover {
+  color: wheat; /* Change this to the color you want */
+}
+
+.header nav ul li.boxed {
+  border: 1px solid white; /* Add this line */
+  border-radius: 5px; /* Add this line */
+  margin: 5px; /* Add this line */
+}
+
 body {
-  background: #000000;
-  color: whitesmoke;
- 
- 
-}
+      background-color: black;
+      margin: 0;
+      padding: 0;
+    }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1em;
-  padding: 0 15px; /* Add this line */
-}
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     
+    }
 
-.menu {
-  font-family: sans-serif;
-  font-size: 14px;
-}
+    body {
+      background-color: black;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-.menu-group-heading {
-  margin: 0;
-  padding-bottom: 1em;
-  border-bottom: 2px solid #ccc;
-}
+    .menu {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
 
-.menu-group {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5em;
-  padding: 1.5em 0;
-}
+    .menu img {
+      width: 80%; /* Adjust as needed */
+      height: auto;
+      display: block;
+      margin: 10px auto; /* Adjust as needed */
+    }
 
-.menu-item {
-  display: flex;
-}
+    .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100; /* Ensures the header is above other elements */
+      height: 60px; /* Set the height of the header */
+    }
+  </style>
 
-.menu-item-img {
-  width: 80px;
-  height: 80px;
-  flex-shrink: 0;
-  object-fit: cover;
-  margin-right: 1.5em;
-}
-
-.menu-item-text {
-  flex-grow: 1;
-}
-
-.menu-item-heading {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-}
-
-.menu-item-name {
-  margin-right: 1.5em;
-  color:wheat
-
-}
-
-.menu-item-desc {
-  line-height: 1.6;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-@media screen and (min-width: 992px) {
-  .menu {
-    font-size: 16px;
-  }
-
-  .menu-group {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .menu-item-img {
-    width: 125px;
-    height: 125px;
-  }
-}
-
-    </style>
-  </head>
+    <header class="header">
+      <nav>
+        <ul>
+          <li class="boxed"><a href="https://www.eazydiner.com/bengaluru/cafe-1617-kalyan-nagar-north-bengaluru-691964"> Reserve</a></li>
+          <li class="boxed"><a href="/gallery.html">Gallery</a></li>
+          <li class="boxed"><a href="/Menu.html">Menu</a></li>
+          <li class="boxed"><a href="#">Makeup Studio</a></li>
+        </ul>
+      </nav>
+      <a href="/index.html" style="text-decoration: none;">
+        <h1 style="text-align: center; font-family: 'Courier New', Courier, monospace;">Cafe 1617</h1>
+      </a>
+    </header>
+</head>
 
 <body>
-    <header class="header">
-        <nav>
-          <ul>
-            <li class="boxed"><a href="https://www.eazydiner.com/bengaluru/cafe-1617-kalyan-nagar-north-bengaluru-691964"> Reserve</a></li>
-            <li class="boxed"><a href="/gallery.html">Gallery</a></li>
-            <li class="boxed"><a href="/Menu.html">Menu</a></li>
-            <li class="boxed"><a href="#">Makeup Studio</a></li>
-          </ul>
-        </nav>
-        <a href="/index.html" style="text-decoration: none;">
-          <h1 style="text-align: center; font-family: 'Courier New', Courier, monospace;">Cafe 1617</h1>
-        </a>
-      </header>
-    <main class="container">
-        <div class="menu">
-            <h2 class="menu-group-heading">Menu</h2>
-            <div class="menu-group">
-                <div class="menu-item">
-                    <img
-                        src="https://dummyimage.com/600x400/000/fff"
-                        alt="Black Placeholder Image"
-                        class="menu-item-img"
-                    />
-                    <div class="menu-item-text">
-                        <h3 class="menu-item-heading">
-                            <span class="menu-item-name">Cappuccino</span>
-                            <span class="menu-item-price">$4.50</span>
-                        </h3>
-                        <p class="menu-item-desc">
-                            A classic Italian coffee made with espresso and steamed milk, topped with foamed milk and a sprinkle of cocoa powder.
-                        </p>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img
-                        src="https://dummyimage.com/600x400/ccc/fff"
-                        alt="Black Placeholder Image"
-                        class="menu-item-img"
-                    />
-                    <div class="menu-item-text">
-                        <h3 class="menu-item-heading">
-                            <span class="menu-item-name">Espresso</span>
-                            <span class="menu-item-price">$3.50</span>
-                        </h3>
-                        <p class="menu-item-desc">
-                            A strong black coffee made by forcing steam through finely ground coffee beans, resulting in a concentrated and flavorful shot.
-                        </p>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img
-                        src="https://dummyimage.com/600x400/000/fff"
-                        alt="Black Placeholder Image"
-                        class="menu-item-img"
-                    />
-                    <div class="menu-item-text">
-                        <h3 class="menu-item-heading">
-                            <span class="menu-item-name">Croissant</span>
-                            <span class="menu-item-price">$2.50</span>
-                        </h3>
-                        <p class="menu-item-desc">
-                            A buttery and flaky pastry made with layers of dough, perfect for a light and delicious breakfast or snack.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="menu">
-            <h2 class="menu-group-heading">Main Course</h2>
-            <div class="menu-group">
-                <div class="menu-item">
-                    <img
-                        src="https://dummyimage.com/600x400/ccc/fff"
-                        alt="Black Placeholder Image"
-                        class="menu-item-img"
-                    />
-                    <div class="menu-item-text">
-                        <h3 class="menu-item-heading">
-                            <span class="menu-item-name">Club Sandwich</span>
-                            <span class="menu-item-price">$9.90</span>
-                        </h3>
-                        <p class="menu-item-desc">
-                            A classic sandwich made with layers of turkey, bacon, lettuce, tomato, and mayonnaise, served with a side of fries.
-                        </p>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img
-                        src="https://dummyimage.com/600x400/000/fff"
-                        alt="Black Placeholder Image"
-                        class="menu-item-img"
-                    />
-                    <div class="menu-item-text">
-                        <h3 class="menu-item-heading">
-                            <span class="menu-item-name">Margherita Pizza</span>
-                            <span class="menu-item-price">$12.90</span>
-                        </h3>
-                        <p class="menu-item-desc">
-                            A classic Italian pizza topped with tomato sauce, mozzarella cheese, and fresh basil leaves, baked to perfection.
-                        </p>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img
-                        src="https://dummyimage.com/600x400/ccc/fff"
-                        alt="Black Placeholder Image"
-                        class="menu-item-img"
-                    />
-                    <div class="menu-item-text">
-                        <h3 class="menu-item-heading">
-                            <span class="menu-item-name">Caesar Salad</span>
-                            <span class="menu-item-price">$8.50</span>
-                        </h3>
-                        <p class="menu-item-desc">
-                            A refreshing salad made with crisp romaine lettuce, Parmesan cheese, croutons, and a tangy Caesar dressing.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <script src="src/app.js"></script>
-  </body>
+
+
+  <div class="menu">
+    <img src="imgs/menu1.png" alt="Menu Item 1">
+    <img src="imgs/menu2.png" alt="Menu Item 2">
+    <img src="imgs/menu3.png" alt="Menu Item 3">
+    <img src="imgs/menu4.png" alt="Menu Item 4">
+    <img src="imgs/menu5.png" alt="Menu Item 5">
+    <img src="imgs/menu6.png" alt="Menu Item 6">
+    <img src="imgs/menu7.png" alt="Menu Item 7">
+  </div>
+</body>
 </html>
