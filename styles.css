@@ -87,8 +87,8 @@ a:active { text-decoration: none; }
 
 #section33 {
   background-color: #000;
-  height: 50px; /* Adjust as needed */
-  margin-top: 100px;
+  height: 9%; /* Adjust as needed */
+  margin-top: 50px;
   
 }
 
@@ -343,6 +343,7 @@ a:active { text-decoration: none; }
   align-items: center;
   background-color: #000;
   flex-direction: column;
+
 }
 
 .slide img {
@@ -357,15 +358,21 @@ a:active { text-decoration: none; }
 
 .slider-button {
   position: absolute;
-  bottom: 20px;
+  bottom: 4%;
   background-color: wheat;
   color: black;
-  border: black solid 2px;
+  border: rgb(0, 0, 0) solid 2px;
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 50px; /* Makes the button rounded */
   font-family: 'Courier New', Courier, monospace; /* Changes the font */
   text-emphasis: bold; /* Makes the text bold */
+}
+
+@media (max-width: 600px) {
+  .slider-button{
+    bottom: 19%;
+  }
 }
 
 .slider-nav {
