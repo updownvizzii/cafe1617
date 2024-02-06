@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@400;800&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Restaurant Menu</title>
+    <style>
+       
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+  font-family: 'Turret Road', sans-serif;
+}
+body {
+  background: #000000;
+  color: whitesmoke;
+ 
+ 
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
+  padding: 0 15px; /* Add this line */
+}
+
+.menu {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.menu-group-heading {
+  margin: 0;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #ccc;
+}
+
+.menu-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+
+.menu-item {
+  display: flex;
+}
+
+.menu-item-img {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-right: 1.5em;
+}
+
+.menu-item-text {
+  flex-grow: 1;
+}
+
+.menu-item-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.menu-item-name {
+  margin-right: 1.5em;
+  color:wheat
+
+}
+
+.menu-item-desc {
+  line-height: 1.6;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (min-width: 992px) {
+  .menu {
+    font-size: 16px;
+  }
+
+  .menu-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-item-img {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+    </style>
+  </head>
+
+<body>
+    <header class="header">
+        <nav>
+          <ul>
+            <li class="boxed"><a href="https://www.eazydiner.com/bengaluru/cafe-1617-kalyan-nagar-north-bengaluru-691964"> Reserve</a></li>
+            <li class="boxed"><a href="/gallery.html">Gallery</a></li>
+            <li class="boxed"><a href="/Menu.html">Menu</a></li>
+            <li class="boxed"><a href="#">Makeup Studio</a></li>
+          </ul>
+        </nav>
+        <a href="/index.html" style="text-decoration: none;">
+          <h1 style="text-align: center; font-family: 'Courier New', Courier, monospace;">Cafe 1617</h1>
+        </a>
+      </header>
+    <main class="container">
+        <div class="menu">
+            <h2 class="menu-group-heading">Menu</h2>
+            <div class="menu-group">
+                <div class="menu-item">
+                    <img
+                        src="https://dummyimage.com/600x400/000/fff"
+                        alt="Black Placeholder Image"
+                        class="menu-item-img"
+                    />
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Cappuccino</span>
+                            <span class="menu-item-price">$4.50</span>
+                        </h3>
+                        <p class="menu-item-desc">
+                            A classic Italian coffee made with espresso and steamed milk, topped with foamed milk and a sprinkle of cocoa powder.
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img
+                        src="https://dummyimage.com/600x400/ccc/fff"
+                        alt="Black Placeholder Image"
+                        class="menu-item-img"
+                    />
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Espresso</span>
+                            <span class="menu-item-price">$3.50</span>
+                        </h3>
+                        <p class="menu-item-desc">
+                            A strong black coffee made by forcing steam through finely ground coffee beans, resulting in a concentrated and flavorful shot.
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img
+                        src="https://dummyimage.com/600x400/000/fff"
+                        alt="Black Placeholder Image"
+                        class="menu-item-img"
+                    />
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Croissant</span>
+                            <span class="menu-item-price">$2.50</span>
+                        </h3>
+                        <p class="menu-item-desc">
+                            A buttery and flaky pastry made with layers of dough, perfect for a light and delicious breakfast or snack.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <h2 class="menu-group-heading">Main Course</h2>
+            <div class="menu-group">
+                <div class="menu-item">
+                    <img
+                        src="https://dummyimage.com/600x400/ccc/fff"
+                        alt="Black Placeholder Image"
+                        class="menu-item-img"
+                    />
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Club Sandwich</span>
+                            <span class="menu-item-price">$9.90</span>
+                        </h3>
+                        <p class="menu-item-desc">
+                            A classic sandwich made with layers of turkey, bacon, lettuce, tomato, and mayonnaise, served with a side of fries.
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img
+                        src="https://dummyimage.com/600x400/000/fff"
+                        alt="Black Placeholder Image"
+                        class="menu-item-img"
+                    />
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Margherita Pizza</span>
+                            <span class="menu-item-price">$12.90</span>
+                        </h3>
+                        <p class="menu-item-desc">
+                            A classic Italian pizza topped with tomato sauce, mozzarella cheese, and fresh basil leaves, baked to perfection.
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img
+                        src="https://dummyimage.com/600x400/ccc/fff"
+                        alt="Black Placeholder Image"
+                        class="menu-item-img"
+                    />
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Caesar Salad</span>
+                            <span class="menu-item-price">$8.50</span>
+                        </h3>
+                        <p class="menu-item-desc">
+                            A refreshing salad made with crisp romaine lettuce, Parmesan cheese, croutons, and a tangy Caesar dressing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="src/app.js"></script>
+  </body>
+</html>

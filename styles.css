@@ -413,4 +413,17 @@ a:active { text-decoration: none; }
   height: 100%;
 }
 
+.boxed.special {
+  animation: glow 2s infinite;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #ff0000, 0 0 10px #ff000056, 0 0 15px #ff000085, 0 0 20px #ff00008d;
+  }
+  100% {
+    box-shadow: 0 0 10px #ff00005c, 0 0 20px #ff0000, 0 0 30px #ff000075, 0 0 40px #ff0000;
+  }
+}
+
 /* ... existing CSS ... */

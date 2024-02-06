@@ -5,6 +5,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@400;800&display=swap" rel="stylesheet">
   <style>
 
+
+
 body, html {
   
   margin: 0;
@@ -13,6 +15,7 @@ body, html {
   background: #000;
   color: aliceblue;
   font-family:'Turret Road', sans-serif;
+  background-image: url("imgs/heartback.jpg");
   
 
 }
@@ -99,6 +102,7 @@ body {
     }
 
     .menu {
+      padding: 1%;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -107,6 +111,7 @@ body {
     }
 
     .menu img {
+    
       width: 80%; /* Adjust as needed */
       height: auto;
       display: block;
@@ -138,6 +143,47 @@ body {
 
 
 
+.fixed-button {
+  font-family: 'Courier New', Courier, monospace;
+  position: fixed; /* Change this from absolute to fixed */
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  border: white solid 2px;
+  color: white;
+  padding: 20px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 3px;
+  cursor: pointer;
+  border-radius: 12px;
+  z-index: 1;
+  white-space: nowrap;
+
+}
+
+.fixed-button:hover {
+  background-color: #000000;
+}
+
+/* Responsive design for screens smaller than 600px */
+/* Responsive design for screens smaller than 600px */
+@media (max-width: 600px) {
+  .fixed-button {
+    top: 1%;
+    bottom: 20px;
+    left: 20px;
+    transform: none;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
+
+
   </style>
 
     <header class="header">
@@ -147,13 +193,11 @@ body {
           <li class="boxed"><a href="/gallery.html">Gallery</a></li>
           <li class="boxed"><a href="/Menu.html">Menu</a></li>
           <li class="boxed"><a href="#">Makeup Studio</a></li>
-          <li class="boxed special"><a href="valentinesspecial.html">Valentines Special</a></li>
+    
 
         </ul>
       </nav>
-      <a href="/index.html" style="text-decoration: none;">
-        <h1 style="text-align: center; font-family: 'Courier New', Courier, monospace;">Cafe 1617</h1>
-      </a>
+    
     </header>
 </head>
 
@@ -161,13 +205,20 @@ body {
 
 
   <div class="menu">
-    <img src="imgs/menu1.png" alt="Menu Item 1">
-    <img src="imgs/menu2.png" alt="Menu Item 2">
-    <img src="imgs/menu3.png" alt="Menu Item 3">
-    <img src="imgs/menu4.png" alt="Menu Item 4">
-    <img src="imgs/menu5.png" alt="Menu Item 5">
-    <img src="imgs/menu6.png" alt="Menu Item 6">
-    <img src="imgs/menu7.png" alt="Menu Item 7">
+    <img src="imgs/Valentine's 1.jpg" alt="offer Item 1">
+    <img src="imgs/Valentine's 2.jpg" alt="offer Item 2">
+ 
   </div>
+
+
+  <!-- Other HTML... -->
+
+
+    <a href="tel:+1234567890">
+        <button class="fixed-button">Call Us</button>
+    </a>
+
+
+  <!-- Other HTML... -->
 </body>
 </html>

@@ -26,3 +26,8 @@ setInterval(() => {
   if (nextSlide === slides.length) nextSlide = 0;
   changeSlide(nextSlide);
 }, 4000);
+
+
+
+
+
