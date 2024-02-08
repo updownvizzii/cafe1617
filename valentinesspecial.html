@@ -92,17 +92,20 @@ body {
      
     }
 
-    body {
+    body,html {
       background-color: black;
       margin: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
+      border: 0;
+      padding: 0%;
+      
     }
 
     .menu {
-      padding: 1%;
+      padding: 0%;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -112,7 +115,7 @@ body {
 
     .menu img {
     
-      width: 80%; /* Adjust as needed */
+      width: 100%; /* Adjust as needed */
       height: auto;
       display: block;
       margin: 10px auto; /* Adjust as needed */
@@ -146,7 +149,7 @@ body {
 .fixed-button {
   font-family: 'Courier New', Courier, monospace;
   position: fixed; /* Change this from absolute to fixed */
-  top: 90%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: black;
@@ -173,7 +176,7 @@ body {
 /* Responsive design for screens smaller than 600px */
 @media (max-width: 600px) {
   .fixed-button {
-    top: 1%;
+    top: 50%;
     bottom: 20px;
     left: 20px;
     transform: none;
@@ -182,6 +185,18 @@ body {
   }
 }
 
+button {
+  animation: glow 2s infinite;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff0000;
+  }
+  100% {
+    box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
+  }
+}
 
 
   </style>
@@ -193,8 +208,6 @@ body {
           <li class="boxed"><a href="/gallery.html">Gallery</a></li>
           <li class="boxed"><a href="/Menu.html">Menu</a></li>
           <li class="boxed"><a href="/makeup.html">Makeup Studio</a></li>
-    
-
         </ul>
       </nav>
     
@@ -205,8 +218,10 @@ body {
 
 
   <div class="menu">
+    <img src="imgs/Valentine's 3.jpg" alt="offer Item 3">
     <img src="imgs/Valentine's 1.jpg" alt="offer Item 1">
     <img src="imgs/Valentine's 2.jpg" alt="offer Item 2">
+    
  
   </div>
 
