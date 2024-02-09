@@ -1,6 +1,5 @@
 <html>
 <head>
-<title>Cafe 1617 Valentine's Special</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@400;800&display=swap" rel="stylesheet">
@@ -162,11 +161,53 @@ body {
 
 
 
+.fixeds-button {
+  font-family: 'Courier New', Courier, monospace;
+  position: fixed; /* Change this from absolute to fixed */
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  border: white solid 2px;
+  color: white;
+  padding: 20px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 3px;
+  cursor: pointer;
+  border-radius: 12px;
+  z-index: 1;
+  white-space: nowrap;
+
+}
+
+.fixeds-button:hover {
+  background-color: #000000;
+}
+
+/* Responsive design for screens smaller than 600px */
+/* Responsive design for screens smaller than 600px */
+@media (max-width: 600px) {
+  .fixeds-button {
+    top: 50%;
+    bottom: 20px;
+    left: 20px;
+    transform: none;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
+
+
+
 .fixed-button {
   font-family: 'Courier New', Courier, monospace;
   position: fixed; /* Change this from absolute to fixed */
   top: 50%;
-  left: 50%;
+  left: 40%;
   transform: translate(-50%, -50%);
   background-color: black;
   border: white solid 2px;
@@ -200,6 +241,48 @@ body {
     font-size: 16px;
   }
 }
+
+
+
+.fixeds-button {
+  font-family: 'Courier New', Courier, monospace;
+  position: fixed; /* Change this from absolute to fixed */
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  border: white solid 2px;
+  color: white;
+  padding: 20px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 3px;
+  cursor: pointer;
+  border-radius: 12px;
+  z-index: 1;
+  white-space: nowrap;
+
+}
+
+.fixeds-button:hover {
+  background-color: #000000;
+}
+
+/* Responsive design for screens smaller than 600px */
+/* Responsive design for screens smaller than 600px */
+@media (max-width: 600px) {
+  .fixed-button {
+    top: 50%;
+    bottom: 20px;
+    left: 20px;
+    transform: none;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
 
 button {
   animation: glow 2s infinite;
@@ -246,7 +329,10 @@ button {
 
 
     <a href="tel:+91 98535 80161">
-        <button class="fixed-button">Call Us</button>
+        <button class="fixed-button">Call</button>
+      </a>
+        <a href="https://wa.me/9853580161">
+        <button class="fixeds-button">Whatsapp</button>
     </a>
 
 
